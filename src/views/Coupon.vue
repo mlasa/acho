@@ -29,7 +29,7 @@
 		mounted(){
 			console.log("passou no mounted");
 			this.axios
-				.get("https://achoserver.herokuapp.com/coupon")
+				.get(URL)
 				.then(response => {
 					if (response.status === 200) {
 						console.log(response.data);
