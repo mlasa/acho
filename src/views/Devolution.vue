@@ -55,7 +55,7 @@
           }
         };
         this.axios
-          .get("https://achoserver.herokuapp.com/object/?devolutionCode=" + this.devolutionCode, config)
+          .get(URL + this.devolutionCode, config)
           .then(response => {
             if (response.status === 200) {
               this.returnedObjects = response.data
